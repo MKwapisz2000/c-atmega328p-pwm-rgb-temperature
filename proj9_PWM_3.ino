@@ -1,6 +1,3 @@
-//Wykorzystanie sygnału PWM do użycia diody RGB na dwóch pinach Timera1 i jednym pinie Timera2
-//Zwiększanie "temperatury" za pomocą potencjometru i wyświetlenie jej na wyświetlaczu
-
 #include <avr/io.h>
 #include <util/delay.h>
 #include <string.h>
@@ -29,7 +26,6 @@ void PWM_init()
   
   //Częstotliwosc = 16000000/(1*(1+255)) = 62500Hz (62500 razy na sekunde zliczanie od 0 do 255)
 
-  //Porównywacz
   OCR1A = 255;
   OCR1B = 255;
   OCR2B = 255;
